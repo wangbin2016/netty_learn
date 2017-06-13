@@ -10,13 +10,19 @@ import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 import java.util.Set;
 
-public class TimeClientHandle {
+public class TimeClientHandle implements Runnable{
 	private String host;
 	private int port;
 	private Selector selector;
 	private SocketChannel socketChannel;
 	private volatile boolean stop;
 
+	
+	public static void main(String[] args) {
+		TimeClientHandle client = new TimeClientHandle(null, 8778);
+		client.run();
+	}
+	
 	public TimeClientHandle(String host, int port) {
 		this.host = host == null ? "127.0.0.1" : host;
 		this.port = port == 0 ? 8998 : port;
@@ -88,7 +94,21 @@ public class TimeClientHandle {
 		}
 		
 		if(key.isReadable()){
-			
+			ByteBuffer readBuffer = ByteBuffer.allocate(1024);
+			int readBytes = socketChannel.read(readBuffer);
+			if(readBytes > 0){
+				readBuffer.flip();
+				byte[] bytes = new byte[readBuffer.remaining()];
+				readBuffer.get(bytes);
+				String body = new String(bytes,"utf-8");
+				System.out.println("Now is:"+body);
+				this.stop = true;
+			}else if(readBytes < 0){
+				key.cancel();
+				socketChannel.close();
+			}else{
+				
+			}
 		}
 	}
 

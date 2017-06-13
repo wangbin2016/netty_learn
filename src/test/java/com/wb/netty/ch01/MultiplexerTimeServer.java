@@ -85,7 +85,7 @@ public class MultiplexerTimeServer implements Runnable {
 				String body = new String(bytes,"utf-8");
 				System.out.println("the time server receive order :"+body);
 				
-				String currentTime = "QUERY TIME".equalsIgnoreCase(body)?System.currentTimeMillis()+"":"BAD";
+				String currentTime = "QUERY".equalsIgnoreCase(body)?System.currentTimeMillis()+"":"BAD";
 				
 				doWrite(sc,currentTime);
 			}
