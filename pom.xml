@@ -15,8 +15,6 @@
 	</properties>
 
 	<dependencies>
-
-
 		<!-- https://mvnrepository.com/artifact/io.netty/netty-handler -->
 		<dependency>
 			<groupId>io.netty</groupId>
