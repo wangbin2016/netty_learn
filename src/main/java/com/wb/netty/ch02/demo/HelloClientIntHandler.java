@@ -12,22 +12,22 @@ public class HelloClientIntHandler extends ChannelInboundHandlerAdapter {
     @Override  
     // 读取服务端的信息  
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {  
-        logger.info("HelloClientIntHandler.channelRead");  
-        ByteBuf result = (ByteBuf) msg;  
-        byte[] result1 = new byte[result.readableBytes()];  
-        result.readBytes(result1);  
-        result.release();  
+        logger.info("HelloClientIntHandler.channelRead" + msg);  
+ 
         //ctx.close();  
-        System.out.println("Server said:" + new String(result1));  
+        System.out.println("Server said:" + msg);  
     }  
     @Override  
     // 当连接建立的时候向服务端发送消息 ，channelActive 事件当连接建立的时候会触发  
     public void channelActive(ChannelHandlerContext ctx) throws Exception {  
         logger.info("HelloClientIntHandler.channelActive");  
-        String msg = "Are you ok?";  
-        ByteBuf encoded = ctx.alloc().buffer(4 * msg.length());  
-        encoded.writeBytes(msg.getBytes());  
-        ctx.write(encoded);  
-        ctx.flush();  
+        String msg = "Are you ok?"+System.getProperty("line.separator");
+        for(int i= 0;i<100;i++){
+        	byte[] msgs = msg.getBytes();
+	        ByteBuf encoded = ctx.alloc().buffer(msgs.length);  
+	        encoded.writeBytes(msgs);  
+	        ctx.writeAndFlush(encoded);
+	        System.out.println(i);
+        }
     }  
 }  

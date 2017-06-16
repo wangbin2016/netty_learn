@@ -10,37 +10,31 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
 public class TimeClient {
-	public void connect(int port, String host) throws Exception {
-		EventLoopGroup group = new NioEventLoopGroup();
+	public static void main(String[] args) throws Exception {
+		String host = "127.0.0.1";
+		int port = 8080;
+		EventLoopGroup workerGroup = new NioEventLoopGroup();
+
 		try {
-			Bootstrap b = new Bootstrap();
-			b.group(group);
-			b.channel(NioSocketChannel.class);
-			b.option(ChannelOption.SO_KEEPALIVE, true);
+			Bootstrap b = new Bootstrap(); // (1)
+			b.group(workerGroup); // (2)
+			b.channel(NioSocketChannel.class); // (3)
+			b.option(ChannelOption.SO_KEEPALIVE, true); // (4)
 			b.handler(new ChannelInitializer<SocketChannel>() {
 				@Override
-				protected void initChannel(SocketChannel ch) throws Exception {
-					System.out.println("initChannel");
+				public void initChannel(SocketChannel ch) throws Exception {
 					ch.pipeline().addLast(new TimeClientHandler());
 				}
 			});
-			System.out.println("Client connect");
-			ChannelFuture f = b.connect(host, port);
+			System.out.println("host:"+host+ "  port:"+port);
+			// Start the client.
+			ChannelFuture f = b.connect(host, port).sync(); // (5)
+
+			// Wait until the connection is closed.
 			f.channel().closeFuture().sync();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}finally{
-			group.shutdownGracefully();
+		} finally {
+			workerGroup.shutdownGracefully();
 		}
 	}
 	
-	public static void main(String[] args) {
-		int port = 9988;
-		String host = "127.0.0.1";
-		try {
-			new TimeClient().connect(port, host);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
 }

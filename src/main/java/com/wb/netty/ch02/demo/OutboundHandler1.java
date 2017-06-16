@@ -14,11 +14,11 @@ public class OutboundHandler1 extends ChannelOutboundHandlerAdapter {
     // 向client发送消息  
     public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {  
         logger.info("OutboundHandler1.write");  
-        String response = "I am ok!";  
-        ByteBuf encoded = ctx.alloc().buffer(4 * response.length());  
-        encoded.writeBytes(response.getBytes());  
-        ctx.write(encoded);  
-        ctx.flush();  
+        String response = "I am ok!"+System.getProperty("line.separator");
+        byte[] bytes = response.getBytes();
+        ByteBuf encoded = ctx.alloc().buffer(bytes.length);  
+        encoded.writeBytes(bytes);  
+        ctx.writeAndFlush(encoded);
     }  
       
       

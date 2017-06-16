@@ -1,0 +1,24 @@
+2017-06-14 17:19:48,711 - HelloClientIntHandler.channelActive
+2017-06-14 17:19:48,758 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x834b91ee, L:/127.0.0.1:8000 - R:/127.0.0.1:59171])
+2017-06-14 17:19:48,759 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x834b91ee, L:/127.0.0.1:8000 - R:/127.0.0.1:59171])
+2017-06-14 17:19:48,761 - OutboundHandler2.write
+2017-06-14 17:19:48,761 - OutboundHandler1.write
+2017-06-14 17:19:48,762 - InboundHandler1.channelReadComplete
+2017-06-14 17:19:48,762 - HelloClientIntHandler.channelRead
+2017-06-14 17:29:54,247 - HelloClientIntHandler.channelActive
+2017-06-14 17:29:54,267 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xe84e20b9, L:/127.0.0.1:8000 - R:/127.0.0.1:59576])
+2017-06-14 17:29:54,267 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xe84e20b9, L:/127.0.0.1:8000 - R:/127.0.0.1:59576])
+2017-06-14 17:29:54,267 - OutboundHandler2.write
+2017-06-14 17:29:54,267 - OutboundHandler1.write
+2017-06-14 17:29:54,267 - InboundHandler1.channelReadComplete
+2017-06-14 17:29:54,268 - HelloClientIntHandler.channelRead
+2017-06-14 17:56:26,721 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xb26dd5b9, L:/0:0:0:0:0:0:0:1:8000 - R:/0:0:0:0:0:0:0:1:60188])
+2017-06-14 17:56:26,721 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xb26dd5b9, L:/0:0:0:0:0:0:0:1:8000 - R:/0:0:0:0:0:0:0:1:60188])
+2017-06-14 17:56:26,722 - OutboundHandler2.write
+2017-06-14 17:56:26,722 - OutboundHandler1.write
+2017-06-14 17:56:26,722 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xb26dd5b9, L:/0:0:0:0:0:0:0:1:8000 - R:/0:0:0:0:0:0:0:1:60188])
+2017-06-14 17:56:26,722 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xb26dd5b9, L:/0:0:0:0:0:0:0:1:8000 - R:/0:0:0:0:0:0:0:1:60188])
+2017-06-14 17:56:26,722 - OutboundHandler2.write
+2017-06-14 17:56:26,722 - OutboundHandler1.write
+2017-06-14 17:56:26,722 - InboundHandler1.channelReadComplete
+2017-06-14 17:57:31,666 - InboundHandler1.channelReadComplete
