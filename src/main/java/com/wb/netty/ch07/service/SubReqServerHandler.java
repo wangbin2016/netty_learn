@@ -12,12 +12,20 @@ public class SubReqServerHandler extends ChannelInboundHandlerAdapter {
 	@Override
 	public void channelRead(ChannelHandlerContext ctx,Object msg) throws Exception{
 		SubscribeReq req = (SubscribeReq)msg;
-		if("Lilinfeng".equalsIgnoreCase(req.getUserName())){
-			//ctx.writeAndFlush(resp(req.getSubReqId()));
+		if("Lilinfeng".equalsIgnoreCase(req.getUserName()) || true){
+			ctx.writeAndFlush(resp(req.getSubReqId()));
+			ctx.flush();
 		}
-		req.toString();
+		System.out.println(req.toString());
 	}
-
+	
+	private SubscribeResp resp(int subReqID){
+		SubscribeResp resp = new SubscribeResp();
+		resp.setDesc("hehe");
+		resp.setSubReqId(subReqID);
+		resp.setRespCode("0");
+		return resp;
+	}
 	
 	public void exceptionCaught(ChannelHandlerContext ctx, Throwable exception){
 		exception.printStackTrace();
