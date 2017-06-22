@@ -28,8 +28,7 @@ public class SubReqServer {
 			b.childHandler(new ChannelInitializer<SocketChannel>() {
 				@Override
 				protected void initChannel(SocketChannel ch) throws Exception {
-					ch.pipeline().addLast(new ObjectDecoder(1024 * 1024,
-							ClassResolvers.weakCachingConcurrentResolver(this.getClass().getClassLoader())));
+					ch.pipeline().addLast(new ObjectDecoder(1024 * 1024,ClassResolvers.weakCachingConcurrentResolver(this.getClass().getClassLoader())));
 					ch.pipeline().addLast(new ObjectEncoder());
 					ch.pipeline().addLast(new SubReqServerHandler());
 				}
