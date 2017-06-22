@@ -1,13 +1,9 @@
 package com.wb.netty.ch02;
 
-import java.net.SocketAddress;
 
 import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
-import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-import io.netty.channel.ChannelPromise;
 import io.netty.util.ReferenceCountUtil;
 
 public class DiscardServerHandler extends ChannelInboundHandlerAdapter {

@@ -14,7 +14,7 @@ public class OutboundHandler1 extends ChannelOutboundHandlerAdapter {
     // 向client发送消息  
     public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {  
         logger.info("OutboundHandler1.write");  
-        String response = "I am ok!"+System.getProperty("line.separator");
+        String response = "I am ok!";
         byte[] bytes = response.getBytes();
         ByteBuf encoded = ctx.alloc().buffer(bytes.length);  
         encoded.writeBytes(bytes);  

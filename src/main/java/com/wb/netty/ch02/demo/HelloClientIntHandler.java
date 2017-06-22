@@ -27,7 +27,16 @@ public class HelloClientIntHandler extends ChannelInboundHandlerAdapter {
 	        ByteBuf encoded = ctx.alloc().buffer(msgs.length);  
 	        encoded.writeBytes(msgs);  
 	        ctx.writeAndFlush(encoded);
-	        System.out.println(i);
+	        System.out.println(i+ " msg " +msg);
         }
-    }  
+    } 
+    
+    @Override
+    public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
+    	System.out.println("channelReadComplete");
+    	super.channelReadComplete(ctx);
+    }
+    
+    
+
 }  

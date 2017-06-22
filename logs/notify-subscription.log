@@ -1,7 +1,556 @@
-2017-06-14 17:19:48,711 - HelloClientIntHandler.channelActive
-2017-06-14 17:19:48,758 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x834b91ee, L:/127.0.0.1:8000 - R:/127.0.0.1:59171])
-2017-06-14 17:19:48,759 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x834b91ee, L:/127.0.0.1:8000 - R:/127.0.0.1:59171])
-2017-06-14 17:19:48,761 - OutboundHandler2.write
-2017-06-14 17:19:48,761 - OutboundHandler1.write
-2017-06-14 17:19:48,762 - InboundHandler1.channelReadComplete
-2017-06-14 17:19:48,762 - HelloClientIntHandler.channelRead
+2017-06-16 09:31:30,372 - InboundHandler1.channelReadComplete
+2017-06-16 09:31:30,375 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:366)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:651)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-16 11:34:59,988 - HelloClientIntHandler.channelActive
+2017-06-16 11:35:00,041 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,041 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,041 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,041 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,041 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,041 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,042 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,042 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,042 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,042 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,042 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,042 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,042 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,042 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,042 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,042 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,042 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,043 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,043 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,043 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,043 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,043 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,043 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,043 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,043 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,043 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,043 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,043 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,044 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,044 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,044 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,044 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,044 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,044 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,044 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,044 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,044 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,044 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,044 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,045 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,045 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,045 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,045 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,045 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,045 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,045 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,045 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,045 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,045 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,045 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,046 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,046 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,046 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,046 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,046 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,046 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,046 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,046 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,046 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,046 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,046 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,047 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,047 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,047 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,047 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,047 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,047 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,047 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,047 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,047 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,047 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,047 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,047 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,048 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,048 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,048 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,048 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,048 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,048 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,048 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,048 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,048 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,048 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,048 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,049 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,049 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,049 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,049 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,049 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,049 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,049 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,049 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,049 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,049 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,049 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,050 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,050 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,050 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,050 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,050 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,050 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,050 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,050 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,050 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,050 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,050 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,051 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,051 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,051 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,051 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,051 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,051 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,051 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,051 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,051 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,051 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,051 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,051 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,052 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,052 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,052 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,052 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,052 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,052 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,052 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,052 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,052 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,052 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,052 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,052 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,052 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,053 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,053 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,053 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,053 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,053 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,053 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,053 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,053 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,053 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,053 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,053 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,053 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,053 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,053 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,054 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,054 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,054 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,054 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,054 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,054 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,054 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,054 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,054 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,054 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,054 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,055 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,055 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,055 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,056 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,056 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,056 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,056 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,056 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,056 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,056 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,056 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,056 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,056 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,056 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,056 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,056 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,056 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,057 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,057 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,057 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,057 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,057 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,057 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,057 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,057 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,057 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,057 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,057 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,057 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,057 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,057 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,058 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,058 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,058 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,058 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,058 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,058 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,058 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,058 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,058 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,058 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,058 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,058 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])
+2017-06-16 11:35:00,058 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x61f24281, L:/127.0.0.1:8000 - R:/127.0.0.1:64528])  msg:Are you ok?
+2017-06-16 11:35:00,058 - InboundHandler1.channelReadComplete
+2017-06-16 11:37:24,298 - InboundHandler1.channelReadComplete
+2017-06-16 11:37:24,298 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:366)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:651)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-16 11:38:18,703 - HelloClientIntHandler.channelActive
+2017-06-16 11:38:18,759 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,759 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,760 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,760 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,760 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,760 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,760 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,760 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,760 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,760 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,760 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,760 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,761 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,761 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,761 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,761 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,761 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,761 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,761 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,761 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,761 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,761 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,761 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,762 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,762 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,762 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,762 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,762 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,762 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,762 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,762 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,762 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,762 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,762 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,763 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,763 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,763 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,763 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,763 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,763 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,763 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,763 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,763 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,763 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,763 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,764 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,764 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,764 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,764 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,764 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,764 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,764 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,764 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,764 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,764 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,764 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,765 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,765 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,765 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,765 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,765 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,765 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,765 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,765 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,765 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,765 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,765 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,765 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,766 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,766 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,766 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,766 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,766 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,766 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,766 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,766 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,766 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,766 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,767 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,767 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,767 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,767 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,767 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,767 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,767 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,767 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,767 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,767 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,767 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,767 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,768 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,768 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,768 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,768 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,768 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,768 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,768 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,768 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,768 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,768 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,768 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,769 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,769 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,769 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,769 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,769 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,769 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,769 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,769 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,769 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,769 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,769 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,770 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,770 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,770 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,770 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,770 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,770 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,770 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,770 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,770 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,770 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,770 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,770 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,771 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,771 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,771 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,771 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,771 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,771 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,771 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,771 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,771 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,771 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,771 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,772 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,772 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,772 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,772 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,772 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,772 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,772 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,772 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,772 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,772 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,772 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,772 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,772 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,773 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,773 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,773 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,773 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,773 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,773 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,773 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,773 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,774 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,774 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,774 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,774 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,775 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,775 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,775 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,775 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,775 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,775 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,775 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,775 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,775 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,775 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,775 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,775 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,775 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,775 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,776 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,776 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,776 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,776 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,776 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,776 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,776 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,776 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,776 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,776 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,776 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,776 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,776 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,776 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,777 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,777 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,777 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,777 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,777 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,777 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,777 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,777 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,777 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,777 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,777 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])
+2017-06-16 11:38:18,777 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdac7d8ab, L:/127.0.0.1:8000 - R:/127.0.0.1:64634])  msg:Are you ok?
+2017-06-16 11:38:18,778 - InboundHandler1.channelReadComplete
+2017-06-19 15:52:48,984 - [id: 0x63ba8505] REGISTERED
+2017-06-19 15:52:48,987 - [id: 0x63ba8505] BIND: 0.0.0.0/0.0.0.0:8080
+2017-06-19 15:52:48,988 - [id: 0x63ba8505] CLOSE
+2017-06-19 15:52:48,989 - [id: 0x63ba8505] UNREGISTERED
+2017-06-19 15:53:03,517 - [id: 0x19ad9ba9] REGISTERED
+2017-06-19 15:53:03,520 - [id: 0x19ad9ba9] BIND: 0.0.0.0/0.0.0.0:8083
+2017-06-19 15:53:03,521 - [id: 0x19ad9ba9, L:/0:0:0:0:0:0:0:0:8083] ACTIVE
+2017-06-20 11:08:01,191 - [id: 0x6984ae11] REGISTERED
+2017-06-20 11:08:01,194 - [id: 0x6984ae11] BIND: 0.0.0.0/0.0.0.0:8083
+2017-06-20 11:08:01,195 - [id: 0x6984ae11, L:/0:0:0:0:0:0:0:0:8083] ACTIVE
+2017-06-20 11:08:38,398 - HelloClientIntHandler.channelActive
+2017-06-20 11:08:38,401 - [id: 0x6984ae11, L:/0:0:0:0:0:0:0:0:8083] RECEIVED: [id: 0xd7c76de0, L:/127.0.0.1:8083 - R:/127.0.0.1:51686]
+2017-06-20 11:10:54,121 - InboundHandler1.channelReadComplete
+2017-06-20 11:11:05,170 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:366)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:651)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-20 11:11:54,185 - [id: 0xd078bad9] REGISTERED
+2017-06-20 11:11:54,187 - [id: 0xd078bad9] BIND: 0.0.0.0/0.0.0.0:8083
+2017-06-20 11:11:54,189 - [id: 0xd078bad9, L:/0:0:0:0:0:0:0:0:8083] ACTIVE
+2017-06-20 11:12:00,172 - HelloClientIntHandler.channelActive
+2017-06-20 11:12:00,175 - [id: 0xd078bad9, L:/0:0:0:0:0:0:0:0:8083] RECEIVED: [id: 0x57835feb, L:/127.0.0.1:8083 - R:/127.0.0.1:52411]
+2017-06-20 11:12:49,727 - [id: 0xd078bad9, L:/0:0:0:0:0:0:0:0:8083] RECEIVED: [id: 0x05c6f2ac, L:/127.0.0.1:8083 - R:/127.0.0.1:52586]
+2017-06-20 11:12:49,730 - HelloClientIntHandler.channelActive
+2017-06-20 11:12:49,779 - InboundHandler1.channelReadComplete
+2017-06-20 11:13:18,711 - [id: 0xd078bad9, L:/0:0:0:0:0:0:0:0:8083] RECEIVED: [id: 0x3493c540, L:/127.0.0.1:8083 - R:/127.0.0.1:52696]
+2017-06-20 11:13:18,713 - HelloClientIntHandler.channelActive
+2017-06-20 11:13:18,739 - InboundHandler1.channelReadComplete
+2017-06-20 11:13:18,739 - InboundHandler1.channelReadComplete
+2017-06-20 11:13:45,264 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:366)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:651)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-20 11:13:45,264 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:366)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:651)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-20 11:13:45,265 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:366)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:651)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-20 11:14:00,715 - [id: 0x5468d6bf] REGISTERED
+2017-06-20 11:14:00,717 - [id: 0x5468d6bf] BIND: 0.0.0.0/0.0.0.0:8083
+2017-06-20 11:14:00,718 - [id: 0x5468d6bf, L:/0:0:0:0:0:0:0:0:8083] ACTIVE
+2017-06-20 11:14:05,006 - HelloClientIntHandler.channelActive
+2017-06-20 11:14:05,009 - [id: 0x5468d6bf, L:/0:0:0:0:0:0:0:0:8083] RECEIVED: [id: 0x553fa521, L:/127.0.0.1:8083 - R:/127.0.0.1:52890]
+2017-06-20 11:14:05,058 - InboundHandler1.channelReadComplete
+2017-06-20 11:14:05,061 - HelloClientIntHandler.channelReadSubscribeResp [subReqId=0, respCode=0, desc=hehe]
+2017-06-20 11:14:05,062 - HelloClientIntHandler.channelReadSubscribeResp [subReqId=1, respCode=0, desc=hehe]
+2017-06-20 11:14:51,966 - InboundHandler1.channelReadComplete
+2017-06-20 14:26:16,050 - [id: 0xc4b1d364] REGISTERED
+2017-06-20 14:26:16,052 - [id: 0xc4b1d364] BIND: 0.0.0.0/0.0.0.0:8083
+2017-06-20 14:26:16,054 - [id: 0xc4b1d364, L:/0:0:0:0:0:0:0:0:8083] ACTIVE
+2017-06-20 14:26:21,604 - HelloClientIntHandler.channelActive
+2017-06-20 14:26:21,607 - [id: 0xc4b1d364, L:/0:0:0:0:0:0:0:0:8083] RECEIVED: [id: 0x084d9ce5, L:/127.0.0.1:8083 - R:/127.0.0.1:51151]
+2017-06-20 14:26:21,657 - InboundHandler1.channelReadComplete
+2017-06-20 14:26:21,659 - HelloClientIntHandler.channelReadSubscribeResp [subReqId=0, respCode=0, desc=hehe]
+2017-06-20 14:26:21,660 - HelloClientIntHandler.channelReadSubscribeResp [subReqId=1, respCode=0, desc=hehe]
