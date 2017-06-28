@@ -16,7 +16,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.zip.GZIPInputStream;
 
-import javax.net.ssl.HttpsURLConnection;
 
 public class GetImage {
 	/**
@@ -24,16 +23,28 @@ public class GetImage {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String url = "http://www.nh87.cn/uploads/2017/04/small-ipz00713pl.jpg";
+		getHtml();
+	}
+	
+	public static void getHtml(){
+		//System.out.println(getUrlByChrome("http://m.nanrenvip.net/tianhaiyi/2017/RBD-821.html","utf-8"));
+		
+		getImage();
+	}
+	
+	public static void getImage(){
+		       //http://img3.nanrenvip.net/uploads/2017/04/rbd00821pl.jpg
+		String url = "http://img3.nanrenvip.net/uploads/2017/04/rbd00821pl.jpg";
 		byte[] btImg = getImageFromNetByUrl(url);
 		if(null != btImg && btImg.length > 0){
 			System.out.println("读取到：" + btImg.length + " 字节");
-			String fileName = "small-ipz00713pl.jpg";
+			String fileName = "rbd00821pl.jpg";
 			writeImageToDisk(btImg, fileName);
 		}else{
 			System.out.println("没有从该连接获得内容");
 		}
 	}
+	
 	/**
 	 * 将图片写入到磁盘
 	 * @param img 图片数据流
