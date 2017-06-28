@@ -15,11 +15,10 @@
 	</properties>
 
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/io.netty/netty-handler -->
 		<dependency>
-			<groupId>io.netty</groupId>
-			<artifactId>netty-handler</artifactId>
-			<version>4.1.6.Final</version>
+		    <groupId>io.netty</groupId>
+		    <artifactId>netty-all</artifactId>
+		    <version>4.1.11.Final</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
